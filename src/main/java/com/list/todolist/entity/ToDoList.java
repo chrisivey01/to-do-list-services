@@ -5,17 +5,16 @@ package com.list.todolist.entity;
 import javax.persistence.*;
 
 @Entity
-public class List {
+public class ToDoList {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Integer id;
     String item;
 
-
-    public List(){
+    public ToDoList(){
     }
 
-    public List(String item) {
+    public ToDoList(String item) {
         this.item = item;
     }
 
@@ -34,6 +33,5 @@ public class List {
     public void setItem(String item) {
         this.item = item;
     }
-
 
 }
