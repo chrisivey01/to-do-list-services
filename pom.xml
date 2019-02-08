@@ -8,10 +8,10 @@
         <version>2.1.2.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.to-do-list</groupId>
-    <artifactId>to-do-list</artifactId>
+    <groupId>com.to_do_list</groupId>
+    <artifactId>to_do_list</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>to-do-list</name>
+    <name>to_do_list</name>
     <description>to do list</description>
 
     <properties>
