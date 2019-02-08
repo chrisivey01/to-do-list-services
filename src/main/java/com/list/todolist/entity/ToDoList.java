@@ -5,6 +5,7 @@ package com.list.todolist.entity;
 import javax.persistence.*;
 
 @Entity
+@Table(schema = "to-do-list")
 public class ToDoList {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
