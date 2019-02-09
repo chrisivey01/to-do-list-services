@@ -68,7 +68,8 @@ public class ListController {
         return "Text sent!";
     }
 
-    @Scheduled(cron = "0 10-20/4 * * SUN-SAT")
+//    second, minute, hour, day of month, month, day(s) of week
+    @Scheduled(cron = "0 0 10-20/4 * * * ")
     public void cron(){
         sendText();
     }
