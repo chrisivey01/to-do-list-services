@@ -5,6 +5,7 @@ package com.list.todolist.controller;
         import com.list.todolist.entity.ToDoList;
         import com.list.todolist.repository.ListRepo;
         import org.springframework.beans.factory.annotation.Autowired;
+        import org.springframework.scheduling.annotation.Scheduled;
         import org.springframework.web.bind.annotation.*;
 
         import javax.transaction.Transactional;
@@ -65,5 +66,10 @@ public class ListController {
         sms.main(null);
 
         return "Text sent!";
+    }
+
+    @Scheduled(cron = "0 */12 * * *")
+    public void cron(){
+        sendText();
     }
 }
