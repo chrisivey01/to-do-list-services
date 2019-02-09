@@ -68,7 +68,7 @@ public class ListController {
         return "Text sent!";
     }
 
-    @Scheduled(cron = "*/30 * * * *")
+    @Scheduled(cron = "*/30 * * * * *")
     public void cron(){
         sendText();
     }
