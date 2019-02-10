@@ -69,7 +69,7 @@ public class ListController {
     }
 
 //    second, minute, hour, day of month, month, day(s) of week
-    @Scheduled(cron = "0 0 10-20/4 * * * ")
+    @Scheduled(cron = "0 0 10-20/3 * * * ")
     public void cron(){
         sendText();
     }
